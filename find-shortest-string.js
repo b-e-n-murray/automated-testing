@@ -1,6 +1,6 @@
 "use strict";
 
-/**
+/*
  * Find the shortest string in an array.
  * In the case of a tie, returns the earlier string in the array.
  *
