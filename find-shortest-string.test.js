@@ -1,13 +1,13 @@
 // import function from local file
-const findLongestString = require("./find-longest-string");
+const findShortestString = require("./find-longest-string");
 
-test("findLongestString finds the longest string in an array", () => {
-  expect(findLongestString(["it", "is", "a", "nice", "day"])).toBe("nice");
-  expect(findLongestString(["why", "hello", "to", "you"])).toBe("hello");
+test("findShortestString finds the longest string in an array", () => {
+  expect(findShortestString(["it", "is", "a", "nice", "day"])).toBe("nice");
+  expect(findShortestString(["why", "hello", "to", "you"])).toBe("hello");
 });
 
-test("findLongestString returns the earlier string in cases of joint longest strings", () => {
-  expect(findLongestString(["brave", "dance"])).toBe("brave");
-  expect(findLongestString(["hello", "below"])).toBe("hello");
-  expect(findLongestString(["Pen", "hen", "Ben"])).toBe("Pen");
+test("findShortestString returns the earlier string in cases of joint longest strings", () => {
+  expect(findShortestString(["brave", "dance"])).toBe("brave");
+  expect(findShortestString(["hello", "below"])).toBe("hello");
+  expect(findShortestString(["Pen", "hen", "Ben"])).toBe("Pen");
 });
